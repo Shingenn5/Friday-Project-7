@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Elliott Davis E-Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Custom configuration for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4f46e5', // Indigo-600
+                        'secondary': '#10b981', // Emerald-500
+                        'dark-bg': '#0f172a', // Slate-900
+                        'light-card': '#1e293b', // Slate-800
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Embedded CSS (from style.css) -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate-900 */
+        }
+
+        /* Mobile menu link transition */
+        .mobile-menu-link {
+            transition: background-color 0.15s ease;
+            text-align: center;
+        }
+
+        /* Style for the active navigation link */
+        .nav-active {
+            font-weight: 800; /* extrabold */
+            color: #10b981; /* secondary color */
+        }
+
+        /* Style for the active mobile menu link */
+        .mobile-menu-link.nav-active {
+            background-color: rgba(79, 70, 229, 0.5); /* primary/50 */
+            color: white; /* Ensure text is white on active mobile */
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navigation Bar -->
+    <header class="bg-dark-bg shadow-lg sticky top-0 z-10">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-extrabold text-white tracking-tight">
+                        <span class="text-primary">Elliott Davis</span> E-Portfolio
+                    </span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="nav-link text-white hover:text-secondary px-3 py-2 rounded-lg font-medium transition duration-150 ease-in-out">Home</a>
+                    <a href="education.html" class="nav-link text-white hover:text-secondary px-3 py-2 rounded-lg font-medium transition duration-150 ease-in-out nav-active">Education</a>
+                    <a href="experience.html" class="nav-link text-white hover:text-secondary px-3 py-2 rounded-lg font-medium transition duration-150 ease-in-out">Experience</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-secondary px-3 py-2 rounded-lg font-medium transition duration-150 ease-in-out">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white p-2 rounded-lg hover:bg-light-card focus:outline-none focus:ring-2 focus:ring-secondary transition duration-150">
+                    <!-- Hamburger Icon -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden mt-3 space-y-2 bg-light-card rounded-xl p-3 shadow-xl">
+                <a href="index.html" class="mobile-menu-link block text-white hover:bg-primary/50 px-3 py-2 rounded-lg font-medium">Home</a>
+                <a href="education.html" class="mobile-menu-link block text-white hover:bg-primary/50 px-3 py-2 rounded-lg font-medium nav-active">Education</a>
+                <a href="experience.html" class="mobile-menu-link block text-white hover:bg-primary/50 px-3 py-2 rounded-lg font-medium">Experience</a>
+                <a href="contact.html" class="mobile-menu-link block text-white hover:bg-primary/50 px-3 py-2 rounded-lg font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="content-container" class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto bg-light-card p-8 md:p-10 rounded-2xl shadow-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-white border-b-2 border-primary pb-3">Education & Academic Achievements</h2>
+            
+            <div class="space-y-8">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    My educational journey is the foundation of my analytical and business knowledge. I am excited to begin my specialized studies in Business and I.T.
+                </p>
+
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Tennessee Tech -->
+                    <div class="bg-slate-800 p-6 rounded-xl shadow-md border-t-4 border-secondary">
+                        <h3 class="text-2xl font-bold text-white mb-1">Tennessee Tech</h3>
+                        <p class="text-gray-400 mb-3">August 2024 – May 2027 (Anticipated)</p>
+                        <p class="text-gray-300">
+                            I will be attending Tennessee Tech to pursue a major in <strong>Business and I.T.</strong>
+                        </p>
+                    </div>
+
+                    <!-- MTSU -->
+                    <div class="bg-slate-800 p-6 rounded-xl shadow-md border-t-4 border-secondary">
+                        <h3 class="text-2xl font-bold text-white mb-1">Middle Tennessee State University (MTSU)</h3>
+                        <p class="text-gray-400 mb-3">August 2023 – May 2024</p>
+                        <p class="text-gray-300 mb-2">
+                            I attended MTSU for a year where I successfully completed most of my general education requirements.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                            <li><strong>Award:</strong> Made the Dean’s List in my first semester (Fall 2023) with a 3.5 GPA.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-bg mt-12 py-6">
+        <div class="container mx-auto text-center text-gray-400 text-sm">
+            &copy; 2025 Elliott Davis.
+        </div>
+    </footer>
+
+    <!-- Embedded JS (from script.js) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
